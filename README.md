@@ -1,2 +1,4 @@
 # PogoPenguin
-A game made in android studios.
+
+A fun game about a penguin trying to pogo his way to space.
+

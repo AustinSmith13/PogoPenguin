@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="edu.angelo.FinalProjectSmith"
+      android:versionCode="1"
+      android:versionName="1.0"
+      xmlns:tools="http://schemas.android.com/tools">
+    <application android:icon="@drawable/icon" android:label="CS3372Smith PogoPenguin">
+        <activity android:name=".PogoPenguinGame"
+                  android:label="CS3372Smith PogoPenguin"
+                  android:configChanges="keyboard|keyboardHidden|orientation"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--Adds necessary permission for accelerometer -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="15" />
+</manifest>
